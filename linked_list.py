@@ -51,3 +51,6 @@ class LinkedList:
 
     def extend(self, elements):
         self.data.extend(elements.data)
+
+    def __str__(self):
+        return "[" + " -> ".join(self.data) + "]"
