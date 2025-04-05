@@ -22,7 +22,7 @@ To set up the project and run the tests, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone <https://github.com/vladosadchuk/mtsd-lab2>
+   git clone https://github.com/vladosadchuk/mtsd-lab2
    ```
 
 2. Run project using:
