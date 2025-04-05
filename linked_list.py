@@ -9,15 +9,21 @@ class LinkedList:
         self.data.append(element)
 
     def insert(self, element: str, index: int) -> None:
+        if index < 0 or index > len(self.data):
+            raise IndexError("Index out of range")
         self.data.insert(index, element)
 
     def delete(self, index: int) -> str:
+        if index < 0 or index >= len(self.data):
+            raise IndexError("Index out of range")
         return self.data.pop(index)
 
     def deleteAll(self, element: str) -> None:
         self.data = [x for x in self.data if x != element]
 
     def get(self, index: int) -> str:
+        if index < 0 or index >= len(self.data):
+            raise IndexError("Index out of range")
         return self.data[index]
 
     def clone(self):
